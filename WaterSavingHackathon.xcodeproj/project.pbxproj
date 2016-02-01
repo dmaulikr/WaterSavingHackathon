@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		821AF48D1C5E0F19002344C1 /* pageOneFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 821AF48C1C5E0F19002344C1 /* pageOneFile.swift */; };
 		82656C0A1C5D7CD300B12605 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82656C091C5D7CD300B12605 /* AppDelegate.swift */; };
 		82656C0C1C5D7CD300B12605 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82656C0B1C5D7CD300B12605 /* ViewController.swift */; };
 		82656C0F1C5D7CD300B12605 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82656C0D1C5D7CD300B12605 /* Main.storyboard */; };
@@ -33,6 +34,9 @@
 		8284B86B1C5D994700DCA650 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8284B86A1C5D994700DCA650 /* SystemConfiguration.framework */; };
 		8284B86D1C5D994E00DCA650 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 8284B86C1C5D994E00DCA650 /* libz.tbd */; };
 		8284B86F1C5D995500DCA650 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 8284B86E1C5D995500DCA650 /* libsqlite3.tbd */; };
+		8284BA4D1C5DB3A800DCA650 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8284BA4C1C5DB3A700DCA650 /* FBSDKCoreKit.framework */; };
+		8284BA4F1C5DB3B200DCA650 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8284BA4E1C5DB3B200DCA650 /* FBSDKLoginKit.framework */; };
+		8284BA511C5DC9D000DCA650 /* PushKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8284BA501C5DC9D000DCA650 /* PushKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +57,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		821AF48C1C5E0F19002344C1 /* pageOneFile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = pageOneFile.swift; sourceTree = "<group>"; };
 		82656C061C5D7CD300B12605 /* WaterSavingHackathon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WaterSavingHackathon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		82656C091C5D7CD300B12605 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		82656C0B1C5D7CD300B12605 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -85,6 +90,9 @@
 		8284B86A1C5D994700DCA650 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		8284B86C1C5D994E00DCA650 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		8284B86E1C5D995500DCA650 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		8284BA4C1C5DB3A700DCA650 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
+		8284BA4E1C5DB3B200DCA650 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
+		8284BA501C5DC9D000DCA650 /* PushKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PushKit.framework; path = System/Library/Frameworks/PushKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,14 +100,17 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8284BA511C5DC9D000DCA650 /* PushKit.framework in Frameworks */,
 				8284B86F1C5D995500DCA650 /* libsqlite3.tbd in Frameworks */,
 				8284B86D1C5D994E00DCA650 /* libz.tbd in Frameworks */,
+				8284BA4F1C5DB3B200DCA650 /* FBSDKLoginKit.framework in Frameworks */,
 				8284B86B1C5D994700DCA650 /* SystemConfiguration.framework in Frameworks */,
 				8284B8691C5D993F00DCA650 /* StoreKit.framework in Frameworks */,
 				8284B8671C5D993A00DCA650 /* Social.framework in Frameworks */,
 				8284B8651C5D993300DCA650 /* Security.framework in Frameworks */,
 				8284B8631C5D992D00DCA650 /* QuartzCore.framework in Frameworks */,
 				8284B8611C5D992700DCA650 /* CoreLocation.framework in Frameworks */,
+				8284BA4D1C5DB3A800DCA650 /* FBSDKCoreKit.framework in Frameworks */,
 				8284B85F1C5D992000DCA650 /* CoreGraphics.framework in Frameworks */,
 				8284B85D1C5D991A00DCA650 /* CFNetwork.framework in Frameworks */,
 				8284B85B1C5D991300DCA650 /* AudioToolbox.framework in Frameworks */,
@@ -133,6 +144,7 @@
 		82656BFD1C5D7CD300B12605 = {
 			isa = PBXGroup;
 			children = (
+				8284BA501C5DC9D000DCA650 /* PushKit.framework */,
 				8284B8701C5D996600DCA650 /* Framworks */,
 				8284B84B1C5D98DC00DCA650 /* parse-library-1 */,
 				82656C081C5D7CD300B12605 /* WaterSavingHackathon */,
@@ -158,6 +170,7 @@
 				82656C091C5D7CD300B12605 /* AppDelegate.swift */,
 				82656C0B1C5D7CD300B12605 /* ViewController.swift */,
 				82656C0D1C5D7CD300B12605 /* Main.storyboard */,
+				821AF48C1C5E0F19002344C1 /* pageOneFile.swift */,
 				82656C131C5D7CD400B12605 /* Assets.xcassets */,
 				82656C151C5D7CD400B12605 /* LaunchScreen.storyboard */,
 				82656C181C5D7CD400B12605 /* Info.plist */,
@@ -200,6 +213,8 @@
 		8284B8701C5D996600DCA650 /* Framworks */ = {
 			isa = PBXGroup;
 			children = (
+				8284BA4E1C5DB3B200DCA650 /* FBSDKLoginKit.framework */,
+				8284BA4C1C5DB3A700DCA650 /* FBSDKCoreKit.framework */,
 				8284B86E1C5D995500DCA650 /* libsqlite3.tbd */,
 				8284B86C1C5D994E00DCA650 /* libz.tbd */,
 				8284B86A1C5D994700DCA650 /* SystemConfiguration.framework */,
@@ -285,6 +300,11 @@
 					82656C051C5D7CD300B12605 = {
 						CreatedOnToolsVersion = 7.3;
 						DevelopmentTeam = 25Y72JH26L;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 					82656C1C1C5D7CD400B12605 = {
 						CreatedOnToolsVersion = 7.3;
@@ -351,6 +371,7 @@
 				82656C0C1C5D7CD300B12605 /* ViewController.swift in Sources */,
 				82656C121C5D7CD400B12605 /* WaterSavingHackathon.xcdatamodeld in Sources */,
 				82656C0A1C5D7CD300B12605 /* AppDelegate.swift in Sources */,
+				821AF48D1C5E0F19002344C1 /* pageOneFile.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -497,8 +518,11 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/parse-library-1",
+					"$(PROJECT_DIR)/FacebookSDKs-iOS-20160115",
+					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = WaterSavingHackathon/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "sam-showalter.WaterSavingHackathon";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -516,8 +540,11 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/parse-library-1",
+					"$(PROJECT_DIR)/FacebookSDKs-iOS-20160115",
+					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = WaterSavingHackathon/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "sam-showalter.WaterSavingHackathon";
 				PRODUCT_NAME = "$(TARGET_NAME)";

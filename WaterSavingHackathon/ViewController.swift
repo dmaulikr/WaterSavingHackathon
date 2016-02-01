@@ -8,12 +8,31 @@
 
 import UIKit
 import Parse
+import FBSDKLoginKit
+import FBSDKCoreKit
+import ParseFacebookUtilsV4
+//import Data
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        faebookLogin()
+        //createUser()
+        print("hi")
+        // Do any additional setup after loading the view, typically from a nib.
+    }
+    
+    //from facebok docs
+    func faebookLogin() {
+        var loginButton: FBSDKLoginButton = FBSDKLoginButton()
+        loginButton.center = self.view.center
+        self.view!.addSubview(loginButton)
+      //  FBSDKButton.load()
         
+    }
+    //parse user
+    func createUser() {
         let user = PFUser()
         user.username = "my name"
         user.password = "my pass"
@@ -29,11 +48,30 @@ class ViewController: UIViewController {
             }
         }
         
-        // Do any additional setup after loading the view, typically from a nib.
     }
+    
+    func _loginWithFacebook() {
+        // Set permissions required from the facebook user account
+        var permissionsArray: [AnyObject] = ["user_about_me", "user_relationships", "user_birthday", "user_location"]
+        // Login PFUser using Facebook
+        PFFacebookUtils.logInInBackgroundWithReadPermissions(permissionsArray, block: {(user: PFUser, error: NSError) -> Void in
+            if !user {
+                NSLog("Uh oh. The user cancelled the Facebook login.")
+            }
+            else if user.isNew {
+                NSLog("User signed up and logged in through Facebook!")
+            }
+            else {
+                NSLog("User logged in through Facebook!")
+            }
+            
+        })
+    }
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
+        
         // Dispose of any resources that can be recreated.
     }
 
